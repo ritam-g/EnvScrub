@@ -33,7 +33,7 @@ export function Faq() {
                 type="button"
                 onClick={() => toggle(idx)}
                 aria-expanded={isOpen}
-                className="w-full flex items-center justify-between p-4 sm:p-5 text-left font-semibold text-slate-900 dark:text-white text-sm sm:text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-xl"
+                className="w-full flex items-center justify-between p-4 sm:p-5 text-left font-semibold text-slate-900 dark:text-white text-sm sm:text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-xl cursor-pointer hover:bg-slate-50/70 dark:hover:bg-slate-800/40 transition-colors"
               >
                 <span>{item.question}</span>
                 <ChevronDown

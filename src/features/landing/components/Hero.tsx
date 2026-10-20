@@ -6,9 +6,12 @@ export function Hero() {
   const { hero } = LANDING_CONTENT;
 
   return (
-    <div className="pt-8 pb-10 sm:pt-12 sm:pb-14 text-center">
+    <div className="relative pt-8 pb-10 sm:pt-12 sm:pb-14 text-center">
+      {/* Ambient background glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[260px] bg-emerald-500/10 dark:bg-emerald-500/15 blur-[100px] rounded-full pointer-events-none -z-10" />
+
       {/* Privacy guarantee badge */}
-      <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs sm:text-sm font-medium mb-6 shadow-xs animate-fade-in">
+      <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs sm:text-sm font-medium mb-6 shadow-xs animate-fade-in hover:scale-105 transition-transform cursor-default">
         <Lock className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
         <span>{hero.privacyBadge}</span>
       </div>

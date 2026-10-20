@@ -24,7 +24,7 @@ export function HowItWorks() {
         {howItWorks.steps.map((step, idx) => (
           <Card
             key={step.number}
-            className="p-6 relative flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
+            className="p-6 relative flex flex-col justify-between hover:-translate-y-1 hover:border-emerald-500/40 hover:shadow-md dark:hover:shadow-emerald-950/20 transition-all duration-300 group cursor-default"
           >
             <div>
               <div className="flex items-center justify-between mb-4">

@@ -78,7 +78,7 @@ export function Header() {
             </button>
 
             <a
-              href="https://github.com"
+              href="https://github.com/ritam-g/EnvScrub"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View source on GitHub"

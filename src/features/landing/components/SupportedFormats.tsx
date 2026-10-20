@@ -18,7 +18,7 @@ export function SupportedFormats() {
         {supportedFormats.formats.map((fmt) => (
           <Card
             key={fmt.name}
-            className="p-3.5 flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
+            className="p-3.5 flex flex-col justify-between hover:-translate-y-0.5 hover:border-emerald-500/40 hover:shadow-xs transition-all duration-200 cursor-default"
           >
             <div className="flex items-center gap-2 mb-2">
               <div className="h-5 w-5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">

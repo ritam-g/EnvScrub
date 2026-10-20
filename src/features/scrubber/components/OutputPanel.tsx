@@ -35,7 +35,7 @@ export function OutputPanel({ value, hasInput }: OutputPanelProps) {
   };
 
   return (
-    <div className="flex flex-col h-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden transition-all">
+    <div className="flex flex-col h-full rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden transition-all duration-200">
       {/* Top Header Bar */}
       <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50 text-xs">
         <div className="flex items-center gap-2 font-medium text-slate-700 dark:text-slate-300">

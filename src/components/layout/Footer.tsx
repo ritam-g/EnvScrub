@@ -36,7 +36,7 @@ export function Footer() {
           {/* Links & credit */}
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-xs text-slate-500 dark:text-slate-400">
             <a
-              href="https://github.com"
+              href="https://github.com/ritam-g/EnvScrub"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 hover:text-emerald-500 transition-colors"

@@ -129,10 +129,10 @@ export function KeyList({
               type="button"
               onClick={() => onToggleKey(key)}
               aria-label={`Toggle value retention for key ${key}. Currently ${isKept ? 'kept' : 'removed'}`}
-              className={`flex items-center justify-between gap-2 p-2 rounded-lg border text-left transition-all ${
+              className={`flex items-center justify-between gap-2 p-2.5 rounded-lg border text-left cursor-pointer transition-all duration-150 active:scale-[0.98] select-none ${
                 isKept
-                  ? 'border-amber-300/80 bg-amber-50/40 dark:border-amber-900/60 dark:bg-amber-950/20'
-                  : 'border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-950/30 hover:border-slate-300 dark:hover:border-slate-700'
+                  ? 'border-amber-400 bg-amber-50/70 dark:border-amber-800/80 dark:bg-amber-950/30 shadow-xs ring-1 ring-amber-400/20'
+                  : 'border-slate-200 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-950/40 hover:border-emerald-400/80 dark:hover:border-emerald-600/80 hover:bg-emerald-50/20 dark:hover:bg-emerald-950/20 hover:shadow-xs'
               }`}
             >
               <div className="flex items-center gap-2 min-w-0">
