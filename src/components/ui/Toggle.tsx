@@ -41,6 +41,7 @@ export function Toggle({
         type="button"
         role="switch"
         aria-checked={checked}
+        aria-label={typeof label === 'string' ? label : 'Toggle mode'}
         disabled={disabled}
         onClick={handleClick}
         onKeyDown={handleKeyDown}

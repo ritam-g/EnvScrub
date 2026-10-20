@@ -14,7 +14,7 @@ export function useClipboard({ timeout = 2000 }: UseClipboardOptions = {}) {
       if (!text) return false;
 
       try {
-        if (navigator.clipboard && window.isSecureContext) {
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
           await navigator.clipboard.writeText(text);
         } else {
           // Fallback for non-secure contexts
